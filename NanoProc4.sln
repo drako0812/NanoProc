@@ -4,23 +4,42 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "np-asm", "np-asm\np-asm.vcxproj", "{E56809F2-0FD0-49AF-B67E-A5A63BC64803}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27338D09-AF79-4121-BFE2-274F846DCA03} = {27338D09-AF79-4121-BFE2-274F846DCA03}
+		{1BF6A13A-4AC7-4512-A77E-225BEC9F35CD} = {1BF6A13A-4AC7-4512-A77E-225BEC9F35CD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "np-asm-test", "np-asm-test\np-asm-test.vcxproj", "{1BF6A13A-4AC7-4512-A77E-225BEC9F35CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27338D09-AF79-4121-BFE2-274F846DCA03} = {27338D09-AF79-4121-BFE2-274F846DCA03}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "np-asm-lib", "np-asm-lib\np-asm-lib.vcxproj", "{27338D09-AF79-4121-BFE2-274F846DCA03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D358093C-A604-43DA-88B2-A7794D291DC1}"
+	ProjectSection(SolutionItems) = preProject
+		Doxyfile = Doxyfile
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E56809F2-0FD0-49AF-B67E-A5A63BC64803}.Debug|x64.ActiveCfg = Debug|x64
 		{E56809F2-0FD0-49AF-B67E-A5A63BC64803}.Debug|x64.Build.0 = Debug|x64
-		{E56809F2-0FD0-49AF-B67E-A5A63BC64803}.Debug|x86.ActiveCfg = Debug|Win32
-		{E56809F2-0FD0-49AF-B67E-A5A63BC64803}.Debug|x86.Build.0 = Debug|Win32
 		{E56809F2-0FD0-49AF-B67E-A5A63BC64803}.Release|x64.ActiveCfg = Release|x64
 		{E56809F2-0FD0-49AF-B67E-A5A63BC64803}.Release|x64.Build.0 = Release|x64
-		{E56809F2-0FD0-49AF-B67E-A5A63BC64803}.Release|x86.ActiveCfg = Release|Win32
-		{E56809F2-0FD0-49AF-B67E-A5A63BC64803}.Release|x86.Build.0 = Release|Win32
+		{1BF6A13A-4AC7-4512-A77E-225BEC9F35CD}.Debug|x64.ActiveCfg = Debug|x64
+		{1BF6A13A-4AC7-4512-A77E-225BEC9F35CD}.Debug|x64.Build.0 = Debug|x64
+		{1BF6A13A-4AC7-4512-A77E-225BEC9F35CD}.Release|x64.ActiveCfg = Release|x64
+		{1BF6A13A-4AC7-4512-A77E-225BEC9F35CD}.Release|x64.Build.0 = Release|x64
+		{27338D09-AF79-4121-BFE2-274F846DCA03}.Debug|x64.ActiveCfg = Debug|x64
+		{27338D09-AF79-4121-BFE2-274F846DCA03}.Debug|x64.Build.0 = Debug|x64
+		{27338D09-AF79-4121-BFE2-274F846DCA03}.Release|x64.ActiveCfg = Release|x64
+		{27338D09-AF79-4121-BFE2-274F846DCA03}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

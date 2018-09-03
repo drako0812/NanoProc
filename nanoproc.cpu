@@ -1,0 +1,152 @@
+#cpudef
+{
+    #bits 8
+    
+    #tokendef reg32 {
+        acc =  0x0000
+        comp = 0x0001
+        exc =  0x0002
+        int =  0x0003
+        intq = 0x0004
+        ion =  0x0005
+        stl =  0x0006
+        sp =   0x0007
+        pc =   0x0008
+        a =    0x0009
+        b =    0x000A
+        c =    0x000B
+        d =    0x000C
+        e =    0x000D
+        f =    0x000E
+        g =    0x000F
+        h =    0x0010
+        x =    0x0011
+        y =    0x0012
+    }
+
+    #tokendef reg16
+    {
+        accl =  0x1000
+        compl = 0x1002
+        excl =  0x1004
+        intl =  0x1006
+        intql = 0x1008
+        ionl =  0x100A
+        stll =  0x100C
+        spl =   0x100E
+        pcl =   0x1010
+        al =    0x1012
+        bl =    0x1014
+        cl =    0x1016
+        dl =    0x1018
+        el =    0x1020
+        fl =    0x1022
+        gl =    0x1024
+        hl =    0x1026
+        xl =    0x1028
+        yl =    0x1030
+        acch =  0x1001
+        comph = 0x1003
+        exch =  0x1005
+        inth =  0x1007
+        intqh = 0x1009
+        ionh =  0x100B
+        stlh =  0x100D
+        sph =   0x100F
+        pch =   0x1011
+        ah =    0x1013
+        bh =    0x1015
+        ch =    0x1017
+        dh =    0x1019
+        eh =    0x101B
+        fh =    0x101D
+        gh =    0x101F
+        hh =    0x1021
+        xh =    0x1023
+        yh =    0x1025
+    }
+
+    #tokendef reg8
+    {
+        accll = 0x2000
+        acclh = 0x2001
+        acchl = 0x2002
+        acchh = 0x2003
+        compll = 0x2004
+        complh = 0x2005
+        comphl = 0x2006
+        comphh = 0x2007
+        excll = 0x2008
+        exclh = 0x2009
+        exchl = 0x200A
+        exchh = 0x200B
+        intll = 0x200C
+        intlh = 0x200D
+        inthl = 0x200E
+        inthh = 0x200F
+        intqll = 0x2010
+        intqlh = 0x2011
+        intqhl = 0x2012
+        intqhh = 0x2013
+        ionll = 0x2014
+        ionlh = 0x2015
+        ionhl = 0x2016
+        ionhh = 0x2017
+        stlll = 0x2018
+        stllh = 0x2019
+        stlhl = 0x201A
+        stlhh = 0x201B
+        spll = 0x201C
+        splh = 0x201D
+        sphl = 0x201E
+        sphh = 0x201F
+        pcll = 0x2020
+        pclh = 0x2021
+        pchl = 0x2022
+        pchh = 0x2023
+        all = 0x2024
+        alh = 0x2025
+        ahl = 0x2026
+        ahh = 0x2027
+        bll = 0x2028
+        blh = 0x2029
+        bhl = 0x202A
+        bhh = 0x202B
+        cll = 0x202C
+        clh = 0x202D
+        chl = 0x202E
+        chh = 0x202F
+        dll = 0x2030
+        dlh = 0x2031
+        dhl = 0x2032
+        dhh = 0x2033
+        ell = 0x2034
+        elh = 0x2035
+        ehl = 0x2036
+        ehh = 0x2037
+        fll = 0x2038
+        flh = 0x2039
+        fhl = 0x203A
+        fhh = 0x203B
+        gll = 0x203C
+        glh = 0x203D
+        ghl = 0x203E
+        ghh = 0x203F
+        hll = 0x2040
+        hlh = 0x2041
+        hhl = 0x2042
+        hhh = 0x2043
+        xll = 0x2044
+        xlh = 0x2045
+        xhl = 0x2046
+        xhh = 0x2047
+        yll = 0x2048
+        ylh = 0x2049
+        yhl = 0x204A
+        yhh = 0x204B
+    }
+
+    nop -> 96'0
+    move {dst} {src} -> 0x01
+    swap {dst} {src} -> 
+}
